@@ -17,5 +17,5 @@ path(sprintf('%s/data', pwd), path) % Adds the subdirectories of the root folder
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %This simply clears all variables and closes all windows opened by Matlab.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-close all
-clear all
+%close all
+%clear all

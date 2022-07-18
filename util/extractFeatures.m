@@ -35,6 +35,7 @@ meanC = sumTensor(dataTensor0, [1 2])/(T*N);
 dataTensor0 = bsxfun(@minus, dataTensor0, meanC);
 M.TNC = dataTensor-dataTensor0;
 M.TN = repmat(sumTensor(M.TNC, [3])/(C), 1, 1, C);
+M.TC = repmat(sumTensor(M.TNC, [2])/(N), 1, N, 1);
 M.T = repmat(sumTensor(M.TNC, [2 3])/(N*C), 1, N, C);
 meanTensor = M.TNC;
 %% mean is calculated based on averaging across each coordinate (i.e. collapsing one coordinate of the tensor gives a zero matrix)

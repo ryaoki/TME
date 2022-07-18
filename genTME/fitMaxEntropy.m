@@ -38,6 +38,7 @@ eigVectors = cell(tensorSize, 1);                                          % eig
 eigValues = cell(tensorSize, 1);                                           % eigenValues of each of the specified marginal covariances
 trSigma = nan(tensorSize, 1);                                              % sum of each of the eigenValues of each of the specified marginal covariances
 dim = size(maxEntropy.meanTensor);
+if length(dim)<3, dim(3) = 1; end % hack
 for i = 1:tensorSize
     if ~isempty(margCov{i})
        Tr = trace(margCov{i});
